@@ -19,7 +19,8 @@ namespace WebApplication17.Pages
 
         public void OnGet()
         {
-
+            _logger.LogInformation("***************8test****************");
+            _logger.LogWarning("***************Index test****************");
         }
     }
 }

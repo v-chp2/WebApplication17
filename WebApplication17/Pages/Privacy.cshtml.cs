@@ -19,6 +19,22 @@ namespace WebApplication17.Pages
 
         public void OnGet()
         {
+            _logger.LogInformation("***************Privacy test****************");
+            _logger.LogWarning("***************Privacy test****************");
+        }
+        public void onTest()
+        {
+            try
+            {
+                _logger.LogInformation("***************Privacy test****************");
+               if(1==1)throw new InvalidOperationException("---test Exception------");
+                
+            }
+            catch (Exception e)
+            {
+                _logger.LogError("***************Error test****************");
+                _logger.LogWarning("***************Privacy test****************");
+            }
         }
     }
 }

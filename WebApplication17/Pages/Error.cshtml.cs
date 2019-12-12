@@ -25,6 +25,7 @@ namespace WebApplication17.Pages
 
         public void OnGet()
         {
+            
             RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
         }
     }
